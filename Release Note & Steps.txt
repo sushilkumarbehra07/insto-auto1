@@ -1,0 +1,10 @@
+Step-1:
+Change Json file path in FileUtils.jave file.
+
+Step-2:
+Run application as Spring Boot App
+
+Step-3:
+In Browser hit below URL
+
+http://localhost:8080/
