@@ -14,7 +14,7 @@ app.controller('accountController', function ($scope, $http) {
             $scope.inputAccNo = value.message;
             $http.get('http://localhost:8080/accounts/listtransactions/accountnumber/' + value.message).
                 then(function (response) {
-                    $scope.transheaders = ["Account Number", "Account Name", "Currency", "Account Type", "Value Date", "Debit Amount", "Credit Amount", "Card Type"];
+                    $scope.transheaders = ["Account Number", "Account Name", "Currency", "Account Type", "Value Date", "Debit Amount", "Credit Amount", "Type of Card"];
                     $scope.transactionresp = [];
                     angular.forEach(response.data, function (transResp, key) {
                         if(transResp.accountNumber == value.message ) {
